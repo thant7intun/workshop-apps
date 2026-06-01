@@ -1,20 +1,15 @@
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
-
 namespace: dev
-
 resources:
   - ../../base
   - configmap.yaml
-
 commonLabels:
   env: dev
-
 images:
   - name: pos-app
     newName: ghcr.io/zawthanoo/pos-app
-    newTag: 1.0.0-8-07fb7e
-
+    newTag: 8-5afbb15
 replicas:
   - name: pos-app
     count: 1
