@@ -41,3 +41,5 @@ spec:
               port: 3001
             initialDelaySeconds: 15
             periodSeconds: 10
+      imagePullSecrets:
+        - name: ghcr-io-registry
