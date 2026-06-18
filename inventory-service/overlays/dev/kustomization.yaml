@@ -9,7 +9,7 @@ labels:
 images:
   - name: inventory-service
     newName: ghcr.io/zawthanoo/inventory-service
-    newTag: 0.0.1-6-b52be87
+    newTag: 0.0.1-7-bcbd97b
 replicas:
   - name: inventory-service
     count: 1
