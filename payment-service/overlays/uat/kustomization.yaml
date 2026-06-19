@@ -1,0 +1,28 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+
+namespace: uat
+
+resources:
+  - ../../base
+
+labels:
+  - pairs:
+      env: uat
+
+images:
+  - name: payment-service
+    newName: ghcr.io/zawthanoo/payment-service
+    newTag: local
+
+replicas:
+  - name: payment-service
+    count: 2
+
+configMapGenerator:
+  - name: payment-service-config
+    envs:
+      - .env
+
+generatorOptions:
+  disableNameSuffixHash: true

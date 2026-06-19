@@ -7,5 +7,6 @@ namePrefix: dev-
 resources:
   - ../inventory-service/overlays/dev
   - ../order-service/overlays/dev
+  - ../payment-service/overlays/dev
   - ../pos-app/overlays/dev
   - ingress.yaml

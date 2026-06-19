@@ -6,4 +6,5 @@ namespace: workshop
 resources:
   - ../inventory-service/overlays/uat
   - ../order-service/overlays/uat
+  - ../payment-service/overlays/uat
   - ../pos-app/overlays/uat
