@@ -8,8 +8,8 @@ labels:
       env: dev
 images:
   - name: payment-service
-    newName: ghcr.io/zawthanoo/payment-service
-    newTag: 3-46098dc
+    newName: ghcr.io/thant7intun/payment-service
+    newTag: 1-0ba4845
 replicas:
   - name: payment-service
     count: 1

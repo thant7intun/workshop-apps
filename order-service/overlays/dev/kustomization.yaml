@@ -8,8 +8,8 @@ labels:
       env: dev
 images:
   - name: order-service
-    newName: ghcr.io/zawthanoo/order-service
-    newTag: 8-be7a6f1
+    newName: ghcr.io/thant7intun/order-service
+    newTag: 3-7b34557
 replicas:
   - name: order-service
     count: 1

@@ -8,8 +8,8 @@ labels:
       env: dev
 images:
   - name: inventory-service
-    newName: ghcr.io/zawthanoo/inventory-service
-    newTag: 0.0.1-8-29a1639
+    newName: ghcr.io/thant7intun/inventory-service
+    newTag: 0.0.1-1-6972700
 replicas:
   - name: inventory-service
     count: 1

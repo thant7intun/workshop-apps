@@ -9,8 +9,8 @@ labels:
       env: dev
 images:
   - name: pos-app
-    newName: ghcr.io/zawthanoo/pos-app
-    newTag: 18-c7c2a8f
+    newName: ghcr.io/thant7intun/pos-app
+    newTag: 4-10a7a1e
 replicas:
   - name: pos-app
     count: 1
